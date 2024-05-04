@@ -6,6 +6,9 @@ This project is designed to develop an application that retrieves movie and TV s
 
 This project is created to retrieve movie and TV show data using the TMDB API and share them with users. It is open to any contributions to enhance or improve the project.
 
+For more information, visit [TMDB website](https://www.themoviedb.org).
+
+
 # Test Cases
 
 | Test Case No | Test Case Summary       |
