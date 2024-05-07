@@ -23,28 +23,54 @@
 				}
 			],
 			"request": {
-				"method": "GET",
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NmY3NjY2ZWI1ZjRlNWMyYTVjNjk0NjQ5ZmNmMmM1NCIsInN1YiI6IjY2MzYyN2YzNjYxMWI0MDEyYTY3ZDdiNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BbnpQ7WOmRb1D73I4Ua7jgVSIePyPV3qT7uOGoxB3Ik",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
 				"header": [
 					{
 						"key": "api_key",
 						"value": "{{Api_Key}}",
-						"uuid": "5d8f7d67-14ab-482d-a38a-b616fd9d8bdc"
+						"uuid": "8b1ab58e-21e8-493d-a9d3-d259a4ba526b"
 					}
 				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "authenticity_token",
+							"value": "xQkkFd1Wil98y7pnm9_JTuuzmC9wuK5YljNGP1LYDDQ=",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "elcnburak",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Haziran4052",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
-					"raw": "{{baseURL}}/u/elcnburak?api_key={{Api_Key}}",
+					"raw": "https://www.themoviedb.org/login",
+					"protocol": "https",
 					"host": [
-						"{{baseURL}}"
+						"www",
+						"themoviedb",
+						"org"
 					],
 					"path": [
-						"u",
-						"elcnburak"
-					],
-					"query": [
-						{
-							"key": "api_key",
-							"value": "{{Api_Key}}"
-						}
+						"login"
 					]
 				}
 			},
