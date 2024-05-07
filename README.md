@@ -8,6 +8,9 @@ This project is created to retrieve movie and TV show data using the TMDB API an
 
 For more information, visit [TMDB website](https://www.themoviedb.org).
 
+# Tools
+
+An API test has been conducted using Postman v2.1.
 
 # Test Cases
 
